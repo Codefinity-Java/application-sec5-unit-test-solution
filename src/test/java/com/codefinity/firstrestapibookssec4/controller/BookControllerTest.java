@@ -1,11 +1,10 @@
 package com.codefinity.firstrestapibookssec4.controller;
 
-import com.codefinity.firstrestapibookssec4.controller.BookController;
 import com.codefinity.firstrestapibookssec4.dto.BookRequestDTO;
 import com.codefinity.firstrestapibookssec4.dto.BookResponseDTO;
 import com.codefinity.firstrestapibookssec4.exception.ApiException;
 import com.codefinity.firstrestapibookssec4.service.BookService;
-import com.fasterxml.jackson.core.JsonProcessingException;
+import com.codefinity.firstrestapibookssec4.service.impl.BookServiceImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,7 +15,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 

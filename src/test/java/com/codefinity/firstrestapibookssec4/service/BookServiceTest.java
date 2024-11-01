@@ -5,6 +5,7 @@ import com.codefinity.firstrestapibookssec4.dto.BookResponseDTO;
 import com.codefinity.firstrestapibookssec4.exception.ApiException;
 import com.codefinity.firstrestapibookssec4.model.Book;
 import com.codefinity.firstrestapibookssec4.repositroy.BookRepository;
+import com.codefinity.firstrestapibookssec4.service.impl.BookServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -26,7 +27,7 @@ public class BookServiceTest {
     private BookRepository bookRepository;
 
     @InjectMocks
-    private BookService bookService;
+    private BookServiceImpl bookService;
 
     @BeforeEach
     void setUp() {
